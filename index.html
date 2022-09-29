@@ -6,14 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" type="image/jpg" href="/download.png"/>
+    <script type="text/javascript" src="contact-form.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 
+    <div class="container123">
+        <form>
+            <h3> GET IN TOUCH</h3>
+            <input type="text" name="" id="name" placeholder="Your Name" required>
+            <input type="email" name="" id="email" placeholder="Your Email" required>
+            <textarea name="message" id="message"  rows="4" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+            <button type="button" class="btn cancel" onclick=closeForm() onclick=background()>Close</button>
+            </form>
+    </div>
+
     <main>
+
+        
         <section class="glass"> 
+            
 <div class="dashboard">
     <div class="user">
         <img src="./images/logo.png" alt="">
@@ -29,9 +45,10 @@
     <div class="link">
         <a href="https://steamcommunity.com/profiles/76561198019895666/"><img src="./images/steam-2-icon.png" alt="github"></a>
     </div>
-    <button class="noselect">Contact me</button>
+    <button class="noselect" onclick="openForm()">Contact me</button>
     
 </div>
+
 <div class="technologies">
     <div class="status">
         <h1> Technologies </h1>
@@ -73,6 +90,8 @@
     <div class="circle1"></div>
     <div class="circle2"></div>
     <div class="circle3"></div>
+
+
     
 </body>
 </html>

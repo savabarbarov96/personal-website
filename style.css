@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 main {
@@ -336,4 +337,60 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+
+
+form{
+
+  background: #6cdbeb;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 2rem;
+}
+
+
+form button{
+
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form input, output,textarea{
+  
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+ background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+}
+
+.container123{
+display:none;
+position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-30%, -50%);
+      width: 50%;
+      z-index: 3;
+       }
+  
+
+  .background{
+
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 10;
+  opacity: 0;
+  transition: all .5s ease;
   }
