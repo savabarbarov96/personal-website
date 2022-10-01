@@ -11,15 +11,17 @@
     <script type="text/javascript" defer src="contact-form.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <title>Document</title>
 </head>
 
 <body>
 
     <div class="container123">
-        <form>
+        <form onsubmit="sendEmail()">
             <h3> GET IN TOUCH</h3>
             <input type="text" name="" id="name" placeholder="Your Name" required>
+            <input type="subject" name="" id="subject" placeholder="Subject" required>
             <input type="email" name="" id="email" placeholder="Your Email" required>
             <textarea name="message" id="message" rows="4" placeholder="Your Message"></textarea>
             <button type="submit">Submit</button>

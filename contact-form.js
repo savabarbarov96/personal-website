@@ -34,3 +34,18 @@ entries.forEach((entry) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
+function sendEmail(){
+Email.send({
+  Host : "smtp.elasticemail.com",
+  Username : "savabarbarov96@gmail.com",
+  Port : "2525",
+  Password : "4447743A92BB20A7194219F50A37982C16E5",
+  To : 'savabarbarov96@gmail.com',
+  From : document.getElementById("email").value,  
+  Subject : "This is the subject",
+  Body : "And this is the body"
+}).then(
+message => alert(message)
+);
+}
