@@ -6,7 +6,7 @@
 }
 
 main {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   min-height: 100vh;
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   display: flex;
@@ -74,6 +74,7 @@ h1 {
 .circle2 {
   bottom: 5%;
   left: 10%;
+  rotate: 10deg;
 }
 
 .circle3 {
@@ -171,6 +172,8 @@ h1 {
     padding: 1rem;
     box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
     justify-content: space-between;
+    -webkit-box-shadow: 7px 7px 11px 2px rgba(0,0,0,0.57); 
+box-shadow: 7px 7px 11px 2px rgba(0,0,0,0.57);
   }
   
 .link img{
@@ -394,3 +397,17 @@ position: absolute;
   opacity: 0;
   transition: all .5s ease;
   }
+
+
+.glass.hidden{
+opacity: 0;
+filter:blur(5px);
+transform: rotateX(-100%);
+transition:1s;
+}
+
+.glass.show{
+  opacity: 1;
+  filter:blur(0);
+  transform:translate(0);
+}
